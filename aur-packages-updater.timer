@@ -1,0 +1,9 @@
+[Unit]
+Description=Check for AUR updates daily
+
+[Timer]
+OnCalendar=*-*-* 7:00:00
+RandomizedDelaySec=2h
+
+[Install]
+WantedBy=timers.target

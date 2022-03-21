@@ -1,0 +1,8 @@
+[Unit]
+Description=Update AUR packages which are to be updated.
+
+[Service]
+Type=oneshot
+User=builder
+Group=builder
+ExecStart=/usr/bin/bash /usr/bin/aur-packages-updater.sh
